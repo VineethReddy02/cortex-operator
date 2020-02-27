@@ -4,11 +4,11 @@ This is the initial work done to ease Cortex deployment in Kubernetes environmen
 
 Now you just need the operator, cortex custom resource definition and cortex custom resource.
 
-##### Create Cortex Custom Resource Definition 
+#### Create Cortex Custom Resource Definition 
 
 ```kubectl create -f deploy/crds/cortex.k8s.com_cortexes_crd.yaml```
 
-##### Create Cortex Operator
+#### Create Cortex Operator
 
 ```kubectl create -f deploy/operator.yaml``` 
 
@@ -40,7 +40,7 @@ spec:
     size: 1
 ```
 
-##### Create above configured Cortex custom resource
+#### Create above configured Cortex custom resource
 
 ```kubectl create -f deploy/crds/cortex.k8s.com_v1alpha1_cortex_cr.yaml```
 
@@ -73,7 +73,7 @@ Also you can check the ring status using this endpoint:
 http://<NODE_IP>:30080/ring
 ```
 
-##### TODO's:
+#### TODO's:
 
 1. Configurable storage backend using the custom resource.
 2. Configurable ring i.e consul/etcd/gossip using the custom resource.
