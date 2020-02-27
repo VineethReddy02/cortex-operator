@@ -1,0 +1,23 @@
+apiVersion: cortex.k8s.com/v1alpha1
+kind: Cortex
+metadata:
+  name: example-cortex
+spec:
+  consul:
+    size: 1
+  distributor:
+    size: 1
+  ingester:
+    size: 1
+  querier:
+    size: 1
+  queryFrontEnd:
+    size: 1
+  nginx:
+    size: 1
+  tableManager:
+    size: 1
+  s3:
+    size: 1
+  dynamodb:
+    size: 1
